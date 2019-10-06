@@ -5,10 +5,11 @@ class Artist
   def initialize(name)
     @name = name
     @songs = []
+    save
   end
     
     def self.all
-      @@all
+      @@all.uniq
     end
 
 def save
